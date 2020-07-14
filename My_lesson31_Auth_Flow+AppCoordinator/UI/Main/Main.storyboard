@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ue6-6j-rvU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main Controller-->
+        <scene sceneID="Sbp-ti-FJe">
+            <objects>
+                <viewController id="jbZ-H4-eXI" customClass="MainController" customModule="My_lesson31_Auth_Flow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcy-ID-vQ2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="LG8-uz-CbX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S41-5e-yHJ">
+                        <barButtonItem key="rightBarButtonItem" title="LogOut" id="D2N-OD-q5j">
+                            <connections>
+                                <action selector="logoutBtnClicked" destination="jbZ-H4-eXI" id="x9M-3r-cg1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ia7-nS-0el" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="997.10144927536237" y="105.80357142857143"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bzV-vM-IpN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ue6-6j-rvU" customClass="NavigationController" customModule="My_lesson31_Auth_Flow" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CaD-Yu-1hE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jbZ-H4-eXI" kind="relationship" relationship="rootViewController" id="4Yr-ar-Iev"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wGn-cB-yGD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="105.80357142857143"/>
+        </scene>
+    </scenes>
+</document>

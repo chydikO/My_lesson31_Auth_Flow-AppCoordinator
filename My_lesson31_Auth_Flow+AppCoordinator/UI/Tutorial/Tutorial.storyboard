@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9No-7P-5Ab">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tutorial Controller-->
+        <scene sceneID="uiA-0M-Wv7">
+            <objects>
+                <viewController id="Gqz-wR-fF1" customClass="TutorialController" customModule="My_lesson31_Auth_Flow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1i0-C0-Vg5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="P4x-HW-4Se"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3UI-Sm-mu7">
+                        <barButtonItem key="rightBarButtonItem" title="Skip" id="7PQ-rn-igk">
+                            <connections>
+                                <action selector="appStart" destination="Gqz-wR-fF1" id="dsY-GM-JoD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajz-dU-ZkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="135.9375"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Xk-1S-tjY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9No-7P-5Ab" customClass="NavigationController" customModule="My_lesson31_Auth_Flow" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6sv-1A-dcc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Gqz-wR-fF1" kind="relationship" relationship="rootViewController" id="giK-6Z-532"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="imk-Ib-DxR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="135.9375"/>
+        </scene>
+    </scenes>
+</document>
